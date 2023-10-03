@@ -141,6 +141,7 @@ console.log(me.skills.css);
 /* ESERCIZIO 14
   Scrivi del codice per creare un array inizialmente vuoto. Riempilo successivamente con i numeri da 1 a 10.
 */
+// prova
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 const numbers = [];
