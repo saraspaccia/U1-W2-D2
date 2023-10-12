@@ -6,8 +6,12 @@
 let n1 = 10;
 let n2 = 20;
 
-if (n2 > n1) {
-  console.log(20);
+if (n1 > n2) {
+  console.log("il numero più grande è", n1);
+} else if (n1 < n2) {
+  console.log("il numero più grande è", n2);
+} else {
+  console.log("i numeri sono uguali");
 }
 
 /* ESERCIZIO 2
@@ -29,7 +33,7 @@ if (n3 !== n4) {
 /* SCRIVI QUI LA TUA RISPOSTA */
 let n5 = 50;
 
-if (n5 % 5);
+if (n5 % 5 === 0);
 {
   console.log("divisibile per 5");
 }
@@ -39,11 +43,12 @@ if (n5 % 5);
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-let n6 = 8;
-let n7 = 0;
-console.log(n6 === 8);
-console.log(n6 - n7 || n6 + n7);
+let y1 = 10;
+let y2 = 2;
 
+if (y1 === 8 || y2 === 8 || y1 + y2 === 8 || y1 - y2 === 8 || y2 - y1 === 8) {
+  console.log("verificato");
+}
 /* ESERCIZIO 5
   Stai lavorando su un sito di e-commerce. Stai salvando il saldo totale del carrello dell'utente in una variabile "totalShoppingCart".
   C'è una promozione in corso: se il totale del carrello supera 50, l'utente ha diritto alla spedizione gratuita (altrimenti la spedizione ha un costo fisso pari a 10).
@@ -51,8 +56,8 @@ console.log(n6 - n7 || n6 + n7);
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-const totalShoppingCart = 50;
-const shippingCosts = totalShoppingCart > 50 ? gratis : 10;
+let totalShoppingCart = 50;
+let shippingCosts = totalShoppingCart > 50 ? gratis : 10;
 console.log(shippingCosts);
 
 /* ESERCIZIO 6
@@ -61,6 +66,14 @@ console.log(shippingCosts);
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+let totalShoppingCart2 = 50;
+totalShoppingCart2 = totalShoppingCart2 * 0.8;
+let shippingCosts2 = 10;
+let amountToPay2 = totalShoppingCart2;
+if (totalShoppingCart2 < 50) {
+  amountToPay2 += shippingCosts2;
+}
+console.log("totale da pagare", amountToPay2);
 
 /* ESERCIZIO 7
   Crea tre variabili, e assegna un valore numerico a ciascuna di esse.
@@ -76,15 +89,22 @@ console.log(shippingCosts);
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 let n10 = 30;
-console.log(typeof n10);
-
+if (typeof n10 === "number") {
+  console.log("è un numero");
+} else {
+  console.log("non è un numero");
+}
 /* ESERCIZIO 9
   Crea un algoritmo per controllare se un numero fornito sia pari o dispari (suggerimento: cerca l'operatore modulo su un motore di ricerca)
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 const n20 = 20;
-console.log(n20 % 2 === 0);
+if (n20 % 2 === 0) {
+  console.log("il numero è pari");
+} else {
+  console.log("è un numero dispari");
+}
 
 /* ESERCIZIO 10
   Modifica la logica del seguente algoritmo in modo che mostri in console il messaggio corretto in ogni circostanza.
@@ -128,15 +148,15 @@ console.log(me);
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 delete me.lastName;
-console.log(me.lastName);
+console.log(me);
 
 /* ESERCIZIO 13
   Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere l'ultimo elemento della proprietà "skills".
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-delete me.skills.css;
-console.log(me.skills.css);
+me.skills.pop();
+console.log(me);
 
 /* ESERCIZIO 14
   Scrivi del codice per creare un array inizialmente vuoto. Riempilo successivamente con i numeri da 1 a 10.
